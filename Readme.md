@@ -1,7 +1,7 @@
 ## Javascript Basic Projects 
 
 * Color Switcher
-* second
+* BMI calculator
 * Third
 
 ```javascript
