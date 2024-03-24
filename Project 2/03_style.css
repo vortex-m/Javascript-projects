@@ -13,8 +13,20 @@ body{
 
 .container h1{
     margin-top: 20%;
+    font-family: Nunito;
 }
 
 .container form{
     margin-top: 10%;
+    font-family: Poppins;
+}
+.button{
+    width: 20vw;
+    height: 6vh;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.weight-guide{
+    margin-top: 50%;
 }
