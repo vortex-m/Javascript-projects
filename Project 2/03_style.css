@@ -12,6 +12,7 @@ body {
 
 .container h1 {
     margin-top: 20%;
+    text-align: center;
     font-family: Nunito;
 }
 
@@ -20,11 +21,25 @@ body {
     font-family: Poppins;
 }
 
+#height{
+    padding: 0.5em;
+    border-radius: 20px;
+    border:none;
+    margin-bottom: 5%;
+    text-align: center;
+}
+#weight{
+    padding: 0.5em;
+    border-radius: 20px;
+    border:none;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
 .button {
-    width: 20vw;
+    width: 18vw;
     height: 6vh;
-    margin-left: 30%;
-    margin-top: 10%;
+    /* margin-left: 30%; */
     border-radius: 20px;
     box-shadow: 0px 1px 7px;
     color: antiquewhite;
@@ -33,13 +48,13 @@ body {
 }
 
 .weight-guide {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 #results {
-    margin-top: 20%;
-    padding: 20px;
-    width: 40vw;
+    margin-top: 5%;
+    padding: 10px;
+    max-width: 255px;
     text-align: center;
     color: rgb(42, 39, 39);
     border: 2px solid rgb(103, 99, 229);

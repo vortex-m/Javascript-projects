@@ -4,6 +4,7 @@ const form = document.querySelector('form')
 // const height = parseInt(document.querySelector('#height').value)
 
 document.querySelector('#results').innerHTML = 'Result'
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
