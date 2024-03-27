@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        button{
+            margin-top: 3%;
+            width: 15vw;
+            height: 8vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Color changer.</h1>
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+    </div>
+</body>
+
+<script>
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
+    const start = document.querySelector('.start')
+    start.addEventListener('click', function () {
+        const div = document.querySelector('body');
+
+        function chngClr() {
+            div.style.backgroundColor = getRandomColor()
+        }
+        const setId = setInterval(chngClr, 1000)
+
+        const stopId = document.querySelector('.stop').addEventListener('click', () => {
+            clearInterval(setId)
+        });
+    })
+</script>
+
+</html>
